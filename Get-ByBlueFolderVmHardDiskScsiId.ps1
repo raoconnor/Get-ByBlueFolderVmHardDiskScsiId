@@ -110,3 +110,5 @@ $arrPropertiesToSelect = "VMName,HardDiskName,ScsiId,SizeGB,RawDeviceId,Path".Sp
 $report | Select -Property $arrPropertiesToSelect | Export-Csv $filepath$filename"-"$date"-"$time".csv" -NoTypeInformation
 Write-output $report | Select $arrPropertiesToSelect | ft -a
 Write-Host "When converting csv columns to excel, change the ScsiId field from general to text (step 3 of 3)" -ForegroundColor Yellow 
+
+
